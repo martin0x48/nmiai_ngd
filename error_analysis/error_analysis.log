@@ -1,0 +1,244 @@
+Two-stage: detector=detector.pt, classifier=classifier.pt
+Running inference on 49 val images...
+  [5/49] images processed
+  [10/49] images processed
+  [15/49] images processed
+  [20/49] images processed
+  [25/49] images processed
+  [30/49] images processed
+  [35/49] images processed
+  [40/49] images processed
+  [45/49] images processed
+
+Total predictions: 5987, Total GT: 4311
+
+==========================================================================================
+  WORST 30 CATEGORIES BY AP
+==========================================================================================
+ Cat      AP    Prec     Rec      F1    TP    FP    FN    GT  Name
+------------------------------------------------------------------------------------------
+  58   0.000   0.000   0.000   0.000     0     0     1     1  COTW LUNGO ØKOLOGISK KAFFEKAPSEL 10STK
+  76   0.000   0.000   0.000   0.000     0     0     1     1  BRUSCHETTA LIGURISK 130G OLIVINO
+ 101   0.000   0.000   0.000   0.000     0    17     1     1  SANDWICH CHEESE HERBS 30G WASA
+ 104   0.000   0.000   0.000   0.000     0     0     1     1  SMØR USALTET 250G TINE
+ 123   0.000   0.000   0.000   0.000     0     0     1     1  ASPARGES GRØNN
+ 155   0.000   0.000   0.000   0.000     0     0     3     3  MELANGE FLYTENDE MARGARIN M/SMØR 500ML
+ 183   0.000   0.000   0.000   0.000     0     1     1     1  KNEKKEBRØD GODT FOR DEG OST 190G SIGDAL
+ 279   0.000   0.000   0.000   0.000     0     0     1     1  KNEKKEBRØD NATURELL GL.FRI 240G WASA
+ 291   0.000   0.000   0.000   0.000     0     0     1     1  PREMIUM DARK ORANGE 100G FREIA
+ 313   0.182   0.333   0.500   0.400     1     2     1     2  FLOTT MATFETT 500G
+   9   0.364   0.333   0.333   0.333     1     2     2     3  ESPRESSO INTENSO 16KAPSLER DOLCE GUSTO
+ 131   0.364   0.200   0.333   0.250     1     4     2     3  KNEKKEBRØD HAVRE GL.FRI 190G SIGDAL
+  59   0.500   0.333   1.000   0.500     1     2     0     1  MÜSLI BLÅBÆR 630G AXA
+ 189   0.513   0.750   0.500   0.600     9     3     9    18  YELLOW LABEL TEA 25POS LIPTON
+  28   0.545   0.333   0.500   0.400     1     2     1     2  LADY GREY TE 200G TWININGS
+  74   0.545   1.000   0.500   0.667     1     0     1     2  NESCAFE BRASERO REFILL 180G
+ 106   0.545   0.750   0.600   0.667     6     2     4    10  NESCAFE GOLD KOFFEINFRI 100G
+ 198   0.545   0.200   0.500   0.286     1     4     1     2  ALI ORIGINAL KAFFEPUTER 18STK
+ 285   0.545   1.000   0.500   0.667     1     0     1     2  Leka Egg 10stk
+ 347   0.564   0.778   0.700   0.737     7     2     3    10  EVERGOOD DARK ROAST PRESSMALT 250G
+ 304   0.588   0.625   0.714   0.667    25    15    10    35  EVERGOOD CLASSIC KOKMALT 250G
+ 160   0.606   0.521   0.758   0.617    25    23     8    33  ALI ORIGINAL KOKMALT 250G
+ 126   0.614   0.750   0.750   0.750     3     1     1     4  GRANDE INTENSO 16KAPSLER DOLCE GUSTO
+ 233   0.623   0.425   0.872   0.571    34    46     5    39  LEKSANDS KNEKKE GODT STEKT 200G
+ 141   0.629   0.733   0.647   0.688    11     4     6    17  EVERGOOD CLASSIC PRESSMALT 250G
+  19   0.636   0.667   0.667   0.667     2     1     1     3  MOLLBERGS ZOEGAS 16KAPSLER DOLCE GUSTO
+ 110   0.636   0.286   0.667   0.400     2     5     1     3  BREMYKT 250G
+ 144   0.636   1.000   0.667   0.800     2     0     1     3  FRIELE FROKOST KOKMALT 250G
+ 221   0.636   0.667   0.667   0.667     2     1     1     3  PUFFET HVETE 260G FIRST PRICE
+ 290   0.636   0.500   0.625   0.556     5     5     3     8  SANDWICH CHEESE TOMAT&BASILIKUM 40G WASA
+
+==========================================================================================
+  COMPLETELY MISSED CATEGORIES (recall = 0)  [9 categories]
+==========================================================================================
+  cat 155 (  3 GT instances): MELANGE FLYTENDE MARGARIN M/SMØR 500ML
+  cat  58 (  1 GT instances): COTW LUNGO ØKOLOGISK KAFFEKAPSEL 10STK
+  cat  76 (  1 GT instances): BRUSCHETTA LIGURISK 130G OLIVINO
+  cat 101 (  1 GT instances): SANDWICH CHEESE HERBS 30G WASA
+  cat 104 (  1 GT instances): SMØR USALTET 250G TINE
+  cat 123 (  1 GT instances): ASPARGES GRØNN
+  cat 183 (  1 GT instances): KNEKKEBRØD GODT FOR DEG OST 190G SIGDAL
+  cat 279 (  1 GT instances): KNEKKEBRØD NATURELL GL.FRI 240G WASA
+  cat 291 (  1 GT instances): PREMIUM DARK ORANGE 100G FREIA
+
+  Categories NEVER predicted (not in any prediction):
+    cat 155 (  3 GT instances): MELANGE FLYTENDE MARGARIN M/SMØR 500ML
+    cat 291 (  1 GT instances): PREMIUM DARK ORANGE 100G FREIA
+    cat 104 (  1 GT instances): SMØR USALTET 250G TINE
+    cat  76 (  1 GT instances): BRUSCHETTA LIGURISK 130G OLIVINO
+    cat 279 (  1 GT instances): KNEKKEBRØD NATURELL GL.FRI 240G WASA
+    cat  58 (  1 GT instances): COTW LUNGO ØKOLOGISK KAFFEKAPSEL 10STK
+    cat 123 (  1 GT instances): ASPARGES GRØNN
+
+==========================================================================================
+  TOP 30 CONFUSION PAIRS (GT -> predicted as)
+==========================================================================================
+Count  GT Cat  Pred Cat  GT Name -> Pred Name
+------------------------------------------------------------------------------------------
+   10     171       160  ALI ORIGINAL FILTERMALT 250G -> ALI ORIGINAL KOKMALT 250G
+    8     304       100  EVERGOOD CLASSIC KOKMALT 250G -> EVERGOOD CLASSIC FILTERMALT 25
+    7     189        27  YELLOW LABEL TEA 25POS LIPTON -> YELLOW LABEL TEA 50POS LIPTON
+    5     100       304  EVERGOOD CLASSIC FILTERMALT 25 -> EVERGOOD CLASSIC KOKMALT 250G
+    4     141       100  EVERGOOD CLASSIC PRESSMALT 250 -> EVERGOOD CLASSIC FILTERMALT 25
+    4      21        39  KNEKKEBRØD RUNDA SESAM&HAVSALT -> KNEKKEBRØD RUNDA KANEL 330G WA
+    3     160       171  ALI ORIGINAL KOKMALT 250G -> ALI ORIGINAL FILTERMALT 250G
+    3     137       292  NESCAFE AZERA ESPRESSO 100G -> NESCAFE AZERA AMERICANO 100G
+    3     347        49  EVERGOOD DARK ROAST PRESSMALT  -> EVERGOOD DARK ROAST FILTERMALT
+    3     155       295  MELANGE FLYTENDE MARGARIN M/SM -> MELANGE FLYTENDE 500ML
+    2     174       297  EPLE&KANEL&ROSIN TE 25POS TWIN -> SOLBÆR TE 25POS TWININGS
+    2     341       304  EVERGOOD CLASSIC HELE BØNNER 5 -> EVERGOOD CLASSIC KOKMALT 250G
+    2     348       171  ALI ORIGINAL HELE BØNNER 250G -> ALI ORIGINAL FILTERMALT 250G
+    2     304       141  EVERGOOD CLASSIC KOKMALT 250G -> EVERGOOD CLASSIC PRESSMALT 250
+    2      49       347  EVERGOOD DARK ROAST FILTERMALT -> EVERGOOD DARK ROAST PRESSMALT 
+    2     141       304  EVERGOOD CLASSIC PRESSMALT 250 -> EVERGOOD CLASSIC KOKMALT 250G
+    2     340       272  EVERGOOD DARK ROAST HELE BØNNE -> EVERGOOD KOFFEINFRI FILTERMALT
+    2      49       340  EVERGOOD DARK ROAST FILTERMALT -> EVERGOOD DARK ROAST HELE BØNNE
+    2     253       224  SOFT FLORA LETT 235G -> SOFT FLORA LETT 540G
+    2     355        78  unknown_product -> MUSLI HAVRE&MANDEL 400G BARE B
+    2     261       214  MÜSLI HASSELNØTT 600G AXA -> HAVREGRØT ROSIN&VANILJE 525G A
+    2      97       181  CHEERIOS MULTI 375G NESTLE -> CHEERIOS HAVRE 375G NESTLE
+    2     261       260  MÜSLI HASSELNØTT 600G AXA -> MUSLI ENERGI 675G AXA
+    2      61       315  MUSLI BLÅBÆR 630G AXA -> 4-KORN 675G AXA
+    2     333       311  MELBATOAST RUND 110G MEULEN -> MELBA TOAST FIRKANTET 100G MEU
+    2     355       235  unknown_product -> FLATBRØD ØKOLOGISK 190G RØROS
+    2     355       150  unknown_product -> Sætre GullBar
+    1      27       189  YELLOW LABEL TEA 50POS LIPTON -> YELLOW LABEL TEA 25POS LIPTON
+    1     100        49  EVERGOOD CLASSIC FILTERMALT 25 -> EVERGOOD DARK ROAST FILTERMALT
+    1     259        56  REGIA KAKAO ORIGINAL 260G -> SJOKOLADEDRIKK 10PK 320G REGIA
+
+==========================================================================================
+  CATEGORIES WITH MOST MISCLASSIFICATIONS (top 30)
+==========================================================================================
+  cat 355 [ 11 errors / 104 GT]: unknown_product
+         confused with: MUSLI HAVRE&MANDEL 400G B(2), FLATBRØD ØKOLOGISK 190G R(2), Sætre GullBar(2)
+  cat 304 [ 10 errors /  35 GT]: EVERGOOD CLASSIC KOKMALT 250G
+         confused with: EVERGOOD CLASSIC FILTERMA(8), EVERGOOD CLASSIC PRESSMAL(2)
+  cat 171 [ 10 errors /  50 GT]: ALI ORIGINAL FILTERMALT 250G
+         confused with: ALI ORIGINAL KOKMALT 250G(10)
+  cat 189 [  8 errors /  18 GT]: YELLOW LABEL TEA 25POS LIPTON
+         confused with: YELLOW LABEL TEA 50POS LI(7), BLACK TEA PEACG&MANGO 20P(1)
+  cat 100 [  7 errors /  60 GT]: EVERGOOD CLASSIC FILTERMALT 250G
+         confused with: EVERGOOD CLASSIC KOKMALT (5), EVERGOOD DARK ROAST FILTE(1), EVERGOOD CLASSIC HELE BØN(1)
+  cat 141 [  6 errors /  17 GT]: EVERGOOD CLASSIC PRESSMALT 250G
+         confused with: EVERGOOD CLASSIC FILTERMA(4), EVERGOOD CLASSIC KOKMALT (2)
+  cat 109 [  5 errors /  51 GT]: KNEKKEBRØD 100 FRØ&HAVSALT 245G WASA
+         confused with: FRUKOST KNEKKEBRØD 240G W(1), DELIKATESS SESAM 285G WAS(1), RUGSPRØ 200G WASA(1)
+  cat  49 [  4 errors /  21 GT]: EVERGOOD DARK ROAST FILTERMALT 250G
+         confused with: EVERGOOD DARK ROAST PRESS(2), EVERGOOD DARK ROAST HELE (2)
+  cat  61 [  4 errors /  35 GT]: MUSLI BLÅBÆR 630G AXA
+         confused with: 4-KORN 675G AXA(2), MÜSLI BLÅBÆR 630G AXA(1), GRANOLA KAKAO&BRINGEBÆR 4(1)
+  cat 261 [  4 errors /  29 GT]: MÜSLI HASSELNØTT 600G AXA
+         confused with: HAVREGRØT ROSIN&VANILJE 5(2), MUSLI ENERGI 675G AXA(2)
+  cat  21 [  4 errors /  54 GT]: KNEKKEBRØD RUNDA SESAM&HAVSALT 290G WASA
+         confused with: KNEKKEBRØD RUNDA KANEL 33(4)
+  cat 341 [  3 errors /  18 GT]: EVERGOOD CLASSIC HELE BØNNER 500G
+         confused with: EVERGOOD CLASSIC KOKMALT (2), EVERGOOD CLASSIC FILTERMA(1)
+  cat 160 [  3 errors /  33 GT]: ALI ORIGINAL KOKMALT 250G
+         confused with: ALI ORIGINAL FILTERMALT 2(3)
+  cat 137 [  3 errors /  11 GT]: NESCAFE AZERA ESPRESSO 100G
+         confused with: NESCAFE AZERA AMERICANO 1(3)
+  cat 348 [  3 errors /   9 GT]: ALI ORIGINAL HELE BØNNER 250G
+         confused with: ALI ORIGINAL FILTERMALT 2(2), ALI ORIGINAL KOKMALT 250G(1)
+  cat 340 [  3 errors /  13 GT]: EVERGOOD DARK ROAST HELE BØNNER 500G
+         confused with: EVERGOOD KOFFEINFRI FILTE(2), EVERGOOD DARK ROAST FILTE(1)
+  cat 347 [  3 errors /  10 GT]: EVERGOOD DARK ROAST PRESSMALT 250G
+         confused with: EVERGOOD DARK ROAST FILTE(3)
+  cat 155 [  3 errors /   3 GT]: MELANGE FLYTENDE MARGARIN M/SMØR 500ML
+         confused with: MELANGE FLYTENDE 500ML(3)
+  cat 246 [  3 errors /  55 GT]: HUSMAN KNEKKEBRØD 260G WASA
+         confused with: MORENEPOTETER GULE 650G B(1), HUSMAN KNEKKEBRØD 520G WA(1), FRUKOST KNEKKEBRØD 240G W(1)
+  cat 174 [  2 errors /  13 GT]: EPLE&KANEL&ROSIN TE 25POS TWININGS
+         confused with: SOLBÆR TE 25POS TWININGS(2)
+  cat 325 [  2 errors /  13 GT]: NESCAFE GULL 100G
+         confused with: NESCAFE GOLD ORGANIC&FAIR(1), NESCAFE GULL 100G REFILL(1)
+  cat 253 [  2 errors /  17 GT]: SOFT FLORA LETT 235G
+         confused with: SOFT FLORA LETT 540G(2)
+  cat  97 [  2 errors /  37 GT]: CHEERIOS MULTI 375G NESTLE
+         confused with: CHEERIOS HAVRE 375G NESTL(2)
+  cat 345 [  2 errors /  36 GT]: KNEKKEBRØD URTER&HAVSALT 220G SIGDAL
+         confused with: KNEKKEBRØD 220G SIGDAL(1), KNEKKEBRØD GODT FOR DEG 2(1)
+  cat 233 [  2 errors /  39 GT]: LEKSANDS KNEKKE GODT STEKT 200G
+         confused with: DAVE&JON'S DADLER SOUR CO(1), FRØ & HAVSALT 200G LEKSAN(1)
+  cat 188 [  2 errors /  38 GT]: MAISKAKER POPCORN 125G FRIGGS
+         confused with: MAISKAKER OST 125G FRIGGS(1), MAISKAKER CHIA/HAVSALT 13(1)
+  cat 333 [  2 errors /  18 GT]: MELBATOAST RUND 110G MEULEN
+         confused with: MELBA TOAST FIRKANTET 100(2)
+  cat  86 [  2 errors /  65 GT]: HAVRE KNEKKEBRØD 300G WASA
+         confused with: FRUKOST FULLKORN 320G WAS(1), HAVRE KNEKKEBRØD ØKONOMI (1)
+  cat  27 [  1 errors /   9 GT]: YELLOW LABEL TEA 50POS LIPTON
+         confused with: YELLOW LABEL TEA 25POS LI(1)
+  cat 259 [  1 errors /  17 GT]: REGIA KAKAO ORIGINAL 260G
+         confused with: SJOKOLADEDRIKK 10PK 320G (1)
+
+==========================================================================================
+  DETECTION MISSES (GT boxes with no matching prediction)  [154 total]
+==========================================================================================
+  cat  21:   6 missed /  54 GT (11% miss rate)  KNEKKEBRØD RUNDA SESAM&HAVSALT 290G WASA
+  cat 160:   5 missed /  33 GT (15% miss rate)  ALI ORIGINAL KOKMALT 250G
+  cat 355:   4 missed / 104 GT (4% miss rate)  unknown_product
+  cat 268:   4 missed /  31 GT (13% miss rate)  SUPERGRØT KANEL&PUFFET QUINOA 54G
+  cat 271:   4 missed /  39 GT (10% miss rate)  FRUKOST KNEKKEBRØD 240G WASA
+  cat 109:   4 missed /  51 GT (8% miss rate)  KNEKKEBRØD 100 FRØ&HAVSALT 245G WASA
+  cat  92:   4 missed /  34 GT (12% miss rate)  KNEKKEBRØD GODT FOR DEG 235G SIGDAL
+  cat 244:   4 missed /  21 GT (19% miss rate)  RUGSPRØ HAVRE 180G WASA
+  cat  52:   4 missed /  38 GT (11% miss rate)  RUGSPRØ 200G WASA
+  cat 100:   3 missed /  60 GT (5% miss rate)  EVERGOOD CLASSIC FILTERMALT 250G
+  cat 106:   3 missed /  10 GT (30% miss rate)  NESCAFE GOLD KOFFEINFRI 100G
+  cat  97:   3 missed /  37 GT (8% miss rate)  CHEERIOS MULTI 375G NESTLE
+  cat  15:   3 missed /  23 GT (13% miss rate)  FRUKT MÜSLI 1KG FIRST PRICE
+  cat 233:   3 missed /  39 GT (8% miss rate)  LEKSANDS KNEKKE GODT STEKT 200G
+  cat  86:   3 missed /  65 GT (5% miss rate)  HAVRE KNEKKEBRØD 300G WASA
+  cat 235:   3 missed /  23 GT (13% miss rate)  FLATBRØD ØKOLOGISK 190G RØROS
+  cat 239:   3 missed /  35 GT (9% miss rate)  MAISKAKER CHIA/HAVSALT 130G FRIGGS
+  cat  33:   3 missed /  35 GT (9% miss rate)  FLATBRØD MORS HJEMMEBAKTE 520G
+  cat 345:   3 missed /  36 GT (8% miss rate)  KNEKKEBRØD URTER&HAVSALT 220G SIGDAL
+  cat 171:   2 missed /  50 GT (4% miss rate)  ALI ORIGINAL FILTERMALT 250G
+  cat 151:   2 missed /  20 GT (10% miss rate)  FARMERS COFFEE FILTERMALT 250G
+  cat   9:   2 missed /   3 GT (67% miss rate)  ESPRESSO INTENSO 16KAPSLER DOLCE GUSTO
+  cat   1:   2 missed /  13 GT (15% miss rate)  COFFEE MATE 180G  NESTLE
+  cat 275:   2 missed /  44 GT (5% miss rate)  EGG FRITTGÅENDE 18STK S/M FIRST PRICE
+  cat  80:   2 missed /  57 GT (4% miss rate)  FROKOSTEGG FRITTGÅENDE L 12STK PRIOR
+  cat 315:   2 missed /  27 GT (7% miss rate)  4-KORN 675G AXA
+  cat 186:   2 missed /  21 GT (10% miss rate)  SUPERGRØT SKOGSBÆR 57G BARE BRA
+  cat 194:   2 missed /  24 GT (8% miss rate)  CRUESLI SOLFROKOST 450G QUAKER
+  cat 214:   2 missed /  21 GT (10% miss rate)  HAVREGRØT ROSIN&VANILJE 525G AXA
+  cat  85:   2 missed /  32 GT (6% miss rate)  RIS PUFFET 260G FIRST PRICE
+
+==========================================================================================
+  FALSE POSITIVE HOTSPOTS (unmatched predictions)  [1830 total]
+==========================================================================================
+  cat 355: 207 FP / 297 preds (70% FP rate)  unknown_product
+  cat 109:  53 FP /  95 preds (56% FP rate)  KNEKKEBRØD 100 FRØ&HAVSALT 245G WASA
+  cat  92:  52 FP /  83 preds (63% FP rate)  KNEKKEBRØD GODT FOR DEG 235G SIGDAL
+  cat 233:  46 FP /  80 preds (58% FP rate)  LEKSANDS KNEKKE GODT STEKT 200G
+  cat 246:  45 FP /  96 preds (47% FP rate)  HUSMAN KNEKKEBRØD 260G WASA
+  cat 100:  41 FP / 104 preds (39% FP rate)  EVERGOOD CLASSIC FILTERMALT 250G
+  cat 271:  39 FP /  77 preds (51% FP rate)  FRUKOST KNEKKEBRØD 240G WASA
+  cat 307:  38 FP /  89 preds (43% FP rate)  MAISKAKER OST 125G FRIGGS
+  cat  21:  37 FP /  83 preds (45% FP rate)  KNEKKEBRØD RUNDA SESAM&HAVSALT 290G WASA
+  cat  85:  32 FP /  61 preds (52% FP rate)  RIS PUFFET 260G FIRST PRICE
+  cat 171:  30 FP /  73 preds (41% FP rate)  ALI ORIGINAL FILTERMALT 250G
+  cat 152:  29 FP /  60 preds (48% FP rate)  HAVREKNEKKEBRØD TYNT 265G WASA
+  cat 275:  26 FP /  68 preds (38% FP rate)  EGG FRITTGÅENDE 18STK S/M FIRST PRICE
+  cat  15:  21 FP /  41 preds (51% FP rate)  FRUKT MÜSLI 1KG FIRST PRICE
+  cat 239:  20 FP /  54 preds (37% FP rate)  MAISKAKER CHIA/HAVSALT 130G FRIGGS
+  cat 345:  20 FP /  51 preds (39% FP rate)  KNEKKEBRØD URTER&HAVSALT 220G SIGDAL
+  cat  86:  20 FP /  81 preds (25% FP rate)  HAVRE KNEKKEBRØD 300G WASA
+  cat 268:  19 FP /  46 preds (41% FP rate)  SUPERGRØT KANEL&PUFFET QUINOA 54G
+  cat 132:  19 FP /  67 preds (28% FP rate)  FRUKOST FULLKORN 320G WASA
+  cat   5:  19 FP /  33 preds (58% FP rate)  GRISSINI HVITLØK 125G GRANFORNO
+  cat  80:  18 FP /  73 preds (25% FP rate)  FROKOSTEGG FRITTGÅENDE L 12STK PRIOR
+  cat  52:  18 FP /  53 preds (34% FP rate)  RUGSPRØ 200G WASA
+  cat 186:  17 FP /  37 preds (46% FP rate)  SUPERGRØT SKOGSBÆR 57G BARE BRA
+  cat 101:  17 FP /  17 preds (100% FP rate)  SANDWICH CHEESE HERBS 30G WASA
+  cat  96:  17 FP /  59 preds (29% FP rate)  FLATBRØD 275G KORNI
+  cat  82:  17 FP /  46 preds (37% FP rate)  FRØ & HAVSALT 200G LEKSANDS
+  cat 329:  17 FP /  39 preds (44% FP rate)  SKORPOR FULLKORN 240G PÅGEN
+  cat 282:  16 FP /  42 preds (38% FP rate)  FILTERPOSER NR.4 200STK ALI
+  cat   0:  16 FP /  21 preds (76% FP rate)  FRØKRISP KNEKKEBRØD ØKOLOGISK 170G BERIT
+  cat 243:  16 FP /  43 preds (37% FP rate)  RYVITA KNEKKEBRØD RUG 400G
+
+Saving misclassified crops to error_analysis/crops/ ...
+  Saved 157 misclassified crops.
+
+Full report saved to error_analysis/error_report.json

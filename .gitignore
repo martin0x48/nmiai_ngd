@@ -1,0 +1,11 @@
+runs/
+submission/
+venv/
+*.pt
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
+rare_categories.png
+wandb/
+submission.zip
+config_detector.yaml
